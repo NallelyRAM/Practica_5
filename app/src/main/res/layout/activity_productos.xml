@@ -9,7 +9,7 @@
     >
 
     <ImageView
-        android:id="@+id/imagenView"
+        android:id="@+id/nombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:src="@drawable/antojitos" />
