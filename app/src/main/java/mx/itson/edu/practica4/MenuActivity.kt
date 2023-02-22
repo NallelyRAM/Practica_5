@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.ImageView
 
 class MenuActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)
@@ -27,8 +28,44 @@ class MenuActivity : AppCompatActivity() {
             var intent: Intent = Intent(this, ProductosActivity::class.java)
             intent.putExtra("menuType", "Antojitos")
             startActivity(intent)
-            //imgA.setImageResource(R.drawable.antojitos)
+
 
         }
+        btnEspecialdades.setOnClickListener {
+            var intent: Intent = Intent(this, ProductosActivity::class.java)
+            intent.putExtra("menuType", "Especialidades")
+            startActivity(intent)
+
+
+        }
+        btncombinations.setOnClickListener {
+            var intent: Intent = Intent(this, ProductosActivity::class.java)
+            intent.putExtra("menuType", "combinations")
+            startActivity(intent)
+
+
+        }
+        btnTortas.setOnClickListener {
+            var intent: Intent = Intent(this, ProductosActivity::class.java)
+            intent.putExtra("menuType", "Tortas")
+            startActivity(intent)
+
+
+        }
+        btnSopas.setOnClickListener {
+            var intent: Intent = Intent(this, ProductosActivity::class.java)
+            intent.putExtra("menuType", "Sopas")
+            startActivity(intent)
+
+
+        }
+        btnDrinks.setOnClickListener {
+            var intent: Intent = Intent(this, ProductosActivity::class.java)
+            intent.putExtra("menuType", "Drinks")
+            startActivity(intent)
+
+
+        }
+
     }
 }
