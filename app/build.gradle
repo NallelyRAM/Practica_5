@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'mx.itson.edu.practica4'
+    namespace 'mx.edu.itson.practica4'
     compileSdk 33
 
     defaultConfig {
-        applicationId "mx.itson.edu.practica4"
+        applicationId "mx.edu.itson.practica4"
         minSdk 22
         targetSdk 33
         versionCode 1
